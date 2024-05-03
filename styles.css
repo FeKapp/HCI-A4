@@ -51,6 +51,7 @@ header {
     margin-right: 10px;
     background: #BF986D; /* Change background color */
     border-radius: 14px; /* Add rounded corners to the carousel items */
+    flex-shrink: 0;
 }
 
 
