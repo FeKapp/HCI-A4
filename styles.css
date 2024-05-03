@@ -42,11 +42,13 @@ header {
 
 .carousel .item {
     flex: none;
-    width: 100px; /* Adjust width as needed */
+    width: 73px; /* Set the width of the carousel items */
+    height: 50px; /* Set the height of the carousel items */
     margin-right: 10px;
     background: #ccc; /* Placeholder style */
     text-align: center;
-    line-height: 100px; /* Adjust line height to item height */
+    line-height: 50px; /* Adjust line height to center content vertically */
+    border-radius: 14px; /* Add rounded corners to the carousel items */
 }
 
 nav {
@@ -64,4 +66,19 @@ nav a {
 
 nav a.active {
     border-bottom: 2px solid green;
+}
+
+h1 {
+    font-family: 'Palaquin Dark SemiBold', sans-serif; /* Change the font family as desired */
+    font-size: 32px;
+}
+
+h2 {
+    font-family: 'Palaquin Dark SemiBold', sans-serif; /* Change the font family as desired */
+    font-size: 24px;
+}
+
+p {
+    font-family: 'Roboto SemiBold', sans-serif; /* Change the font family as desired */
+    font-size: 14px;
 }
