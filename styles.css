@@ -75,22 +75,55 @@ header {
 }
 
 .carousel-productview .item {
+    position: relative; /* Add position relative for absolute positioning of item-name */
     flex: none;
-    width: 241px; /* Set the width of the carousel items */
-    height: 295px; /* Set the height of the carousel items */
-    margin-right: 10px;
-    background: #ccc; /* Placeholder style */
+    width: 241px;
+    height: 295px;
+    margin-right: 22px;
+    background: #ccc;
     text-align: center;
-    line-height: 50px; /* Adjust line height to center content vertically */
-    border-radius: 22px; /* Add rounded corners to the carousel items */
+    line-height: 50px;
+    border-radius: 22px;
+    overflow: hidden;
 }
 
-.carousel-productview .item .icon img {
-    width: 100%; /* Set the width of the image to 100% of its container */
-    height: 100%; /* Set the height of the image to 100% of its container */
-    object-fit: cover; /* Ensure the image covers the entire container */
-    border-radius: 22px; /* Apply the same border-radius as the container */
+
+.carousel-productview .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
+
+.item-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    background: rgba(217, 217, 217, 0.6); /* Adjust the background color with transparency */
+    font-family: 'Palanquin Dark SemiBold', sans-serif; /* Change the font family as desired */
+    font-size: 24px; /* Adjust font size as needed */
+    color:black; /* Adjust text color as needed */
+}
+
+.item-button {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 10px;
+    right: 10px;
+    background-color: #D2FCAB;
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 14px;
+}
+
+.item-button img {
+    width: 32px; /* Adjust width as needed */
+    height: 32px; /* Maintain aspect ratio */
+}
+
 
 nav {
     display: flex;
@@ -110,12 +143,12 @@ nav a.active {
 }
 
 h1 {
-    font-family: 'Palaquin Dark SemiBold', sans-serif; /* Change the font family as desired */
+    font-family: 'Palanquin Dark SemiBold', sans-serif; /* Change the font family as desired */
     font-size: 32px;
 }
 
 h2 {
-    font-family: 'Palaquin Dark SemiBold', sans-serif; /* Change the font family as desired */
+    font-family: 'Palanquin Dark SemiBold', sans-serif; /* Change the font family as desired */
     font-size: 24px;
     margin-bottom: 15px;
 }
