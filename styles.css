@@ -114,14 +114,14 @@ header {
     right: 10px;
     background-color: #D2FCAB;
     color: #fff;
-    padding: 5px 10px;
     text-decoration: none;
     border-radius: 14px;
 }
 
 .item-button img {
-    width: 32px; /* Adjust width as needed */
-    height: 32px; /* Maintain aspect ratio */
+    margin-top: 10px;
+    width: 32px !important; /* Adjust width as needed */
+    height: 32px !important; /* Maintain aspect ratio */
 }
 
 
@@ -151,9 +151,15 @@ h2 {
     font-family: 'Palanquin Dark SemiBold', sans-serif; /* Change the font family as desired */
     font-size: 24px;
     margin-bottom: 15px;
+    color: white;
 }
 
 p {
     font-family: 'Roboto SemiBold', sans-serif; /* Change the font family as desired */
     font-size: 14px;
+    color: white;
+}
+
+body {
+    background-color: #272626;
 }
