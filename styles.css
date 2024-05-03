@@ -35,15 +35,48 @@ header {
     padding: 20px;
 }
 
-.carousel {
+.carousel-categories {
+    height: 66px;
     display: flex;
     overflow-x: auto;
 }
 
-.carousel .item {
-    flex: none;
+.carousel-categories .item {
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
     width: 73px; /* Set the width of the carousel items */
     height: 50px; /* Set the height of the carousel items */
+    margin-right: 10px;
+    background: #BF986D; /* Change background color */
+    border-radius: 14px; /* Add rounded corners to the carousel items */
+}
+
+
+.carousel-categories .item .icon img {
+    margin-top: 25px;
+    width: 30px; /* Set the width of the grey box */
+    height: 30px; /* Set the height of the grey box */
+}
+
+.carousel-categories .item .item-text {
+    /* Styles for the text */
+    color: #BF986D;
+    font-family: 'Roboto SemiBold', sans-serif; /* Change the font family as desired */
+    font-size: 14px;
+    margin-top: 7px; /* Adjust spacing between the icon and text */
+}
+
+.carousel-productview {
+    display: flex;
+    overflow-x: auto;
+}
+
+.carousel-productview .item {
+    flex: none;
+    width: 241px; /* Set the width of the carousel items */
+    height: 295px; /* Set the height of the carousel items */
     margin-right: 10px;
     background: #ccc; /* Placeholder style */
     text-align: center;
@@ -76,6 +109,7 @@ h1 {
 h2 {
     font-family: 'Palaquin Dark SemiBold', sans-serif; /* Change the font family as desired */
     font-size: 24px;
+    margin-bottom: 15px;
 }
 
 p {
