@@ -82,7 +82,14 @@ header {
     background: #ccc; /* Placeholder style */
     text-align: center;
     line-height: 50px; /* Adjust line height to center content vertically */
-    border-radius: 14px; /* Add rounded corners to the carousel items */
+    border-radius: 22px; /* Add rounded corners to the carousel items */
+}
+
+.carousel-productview .item .icon img {
+    width: 100%; /* Set the width of the image to 100% of its container */
+    height: 100%; /* Set the height of the image to 100% of its container */
+    object-fit: cover; /* Ensure the image covers the entire container */
+    border-radius: 22px; /* Apply the same border-radius as the container */
 }
 
 nav {
