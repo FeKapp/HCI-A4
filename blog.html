@@ -3,48 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inspirational Blog</title>
+    <title>AR Home Decorator</title>
     <link rel="stylesheet" href="blog.css">
+    <style>
+        @media screen and (min-width: 1440px) {
+            .container {
+                max-width: 1440px; /* Adjusted for Apple 15-inch Pro screen width */
+            }
+        }
+    </style>
 </head>
 <body>
-    <div class="blog-container">
+    <div class="container">
         <header>
-            <img src="profile-placeholder.png" alt="Profile Image">
-            <h1>Paradies@Home</h1>
-            <p>Welcome To Inspirational Blog</p>
-            <div class="search-container">
-                <input type="search" placeholder="Search for a topic...">
-            </div>
+            <div class="profile">
+                <img src="Images/profile1.png" alt="Profile Image">
+                <h3>Paradies@Home</h3>
+                <img src="Images/bell.png" alt="Bell Icon" class="bell-icon">
+            </div>            
         </header>
         <main>
-            <section class="topics">
-                <h2>Topics</h2>
-                <!-- Topics will be carousel items as in the index page -->
-            </section>
-            <section class="posts">
-                <h2>Most Popular</h2>
-                <!-- Replace with actual blog posts -->
-                <article class="post">
-                    <img src="blog-post-placeholder.jpg" alt="Blog Post Image">
-                    <div class="post-info">
-                        <h3>Simple spring home updates</h3>
-                        <p>As the seasons change and the air becomes filled with the scent of blooming flowers...</p>
-                        <div class="author-info">
-                            <img src="author-placeholder.jpg" alt="Author Image">
-                            <p>Annika Kaltenhauser</p>
-                            <time datetime="2024-04-14">14 April 2024</time>
+
+            <div class="welcome-search">
+                <p class="welcome">Welcome To</p>
+                <h1>Inspirational Blog</h1>
+                
+                <div class="search-bar">
+                    <input type="search" placeholder="Search decoration object...">
+                </div>
+            </div>
+
+            <div class="categories">
+                <h2 class="categories-title">Topics</h2>
+                <div class="carousel-categories">
+                    <div class="item">
+                        <div class="icon">
+                            <img src="Icons/popular.png" alt="Icon 1">
                         </div>
+                        <p class="item-text">Popular</p>
                     </div>
-                </article>
-                <!-- More posts -->
-            </section>
+                    <div class="item">
+                        <div class="icon">
+                            <img src="Icons/new.png" alt="Icon 2">
+                        </div>
+                        <p class="item-text">New</p>
+                    </div>
+                    <div class="item">
+                        <div class="icon">
+                            <img src="Icons/stautes.png" alt="Icon 3">
+                        </div>
+                        <p class="item-text">Statues</p>
+                    </div>
+                    <div class="item">
+                        <div class="icon">
+                            <img src="Icons/plants.png" alt="Icon 4">
+                        </div>
+                        <p class="item-text">Plants</p>
+                    </div>
+                    <div class="item">
+                        <div class="icon">
+                            <img src="Icons/sculptures.png" alt="Icon 5">
+                        </div>
+                        <p class="item-text">Sculptures</p>
+                    </div>
+                    <div class="item">
+                        <div class="icon">
+                            <img src="Icons/mirrors.png" alt="Icon 6">
+                        </div>
+                        <p class="item-text">Mirrors</p>
+                    </div>
+                    <div class="item">
+                        <div class="icon">
+                            <img src="Icons/pottery.png" alt="Icon 7">
+                        </div>
+                        <p class="item-text">Pottery</p>
+                    </div>
+                    <div class="item">
+                        <div class="icon">
+                            <img src="Icons/books.png" alt="Icon 8">
+                        </div>
+                        <p class="item-text">Books</p>
+                    </div>
+                    <div class="item">
+                        <div class="icon">
+                            <img src="Icons/lamps.png" alt="Icon 9">
+                        </div>
+                        <p class="item-text">Lamps</p>
+                    </div>
+                    <div class="item">
+                        <div class="icon">
+                            <img src="Icons/electronics.png" alt="Icon 10">
+                        </div>
+                        <p class="item-text">Electronics</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dynamic-island">
+                <img src="Images/annika.png" alt="profile2">
+                <p class="name">Annika Kaltenhauser</p>
+                <p class="date">14 April 2024</p>
+                <img src="Images/blog-image.png" alt="blog-image">
+                <h2 class="title">Simple spring home updates</h2>
+                <p class="description">As the seasons change and the air becomes filled with the scent of blooming flowers, it's the perfect time to refresh your home and welcome the vibrant spirit of spring indoors. While the idea of giving your space a makeover may seem daunting, it doesn't have to be. With the help of interior design apps, you can easily bring new life to your home without breaking the bank or spending countless hours browsing through furniture stores.</p>
+            </div>
+            
+            
+            
         </main>
         <nav>
-            <a href="index.html" class="nav-home">Home</a>
-            <a href="#" class="nav-blog active">Blog</a>
-            <a href="#" class="nav-saved">Saved</a>
-            <a href="#" class="nav-profile">Profile</a>
-        </nav>
+            <div class="item">
+                <a href="index.html"> <!-- Link hinzufügen -->
+                    <div class="icon">
+                        <img src="Icons/house.png" alt="Icon 1">
+                    </div>
+                    <p class="item-text">Home</p>
+                </a> <!-- Link schließen -->
+            </div>
+            <div class="item">
+                <a href="blog.html"> <!-- Link hinzufügen -->
+                    <div class="icon">
+                        <img src="Icons/blog_white.png" alt="Icon 1">
+                    </div>
+                    <p class="item-text">Blog</p>
+                </a> <!-- Link schließen -->
+            </div>
+            <div class="item">
+                <a rel="ar" href="Zimmerpflanze.usdz"> <!-- Link hinzufügen -->
+                    <div class="icon">
+                        <img src="Icons/ar-viewer.png" alt="Icon 1">
+                    </div>
+                </a> <!-- Link schließen -->
+            </div>
+            <div class="item">
+                <a href="#"> <!-- Link hinzufügen -->
+                    <div class="icon">
+                        <img src="Icons/save.png" alt="Icon 1">
+                    </div>
+                    <p class="item-text">Saved</p>
+                </a> <!-- Link schließen -->
+            </div>
+            <div class="item">
+                <a href="#"> <!-- Link hinzufügen -->
+                    <div class="icon">
+                        <img src="Icons/user.png" alt="Icon 1">
+                    </div>
+                    <p class="item-text">User</p>
+                </a> <!-- Link schließen -->
+            </div>
+        </nav>        
     </div>
 </body>
 </html>
