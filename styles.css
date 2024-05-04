@@ -51,7 +51,7 @@ body, h1, h2, p {
 }
 
 .carousel-categories {
-    height: 66px;
+    height: 70px;
     display: flex;
     overflow-x: auto;
 }
@@ -145,6 +145,10 @@ nav {
     justify-content: space-around;
     background-color: #3A3938;
     padding: 10px 0;
+}
+
+nav a {
+    text-decoration: none; /* Unterstreichung entfernen */
 }
 
 nav .item {
