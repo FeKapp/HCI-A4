@@ -9,33 +9,30 @@ body, h1, h2, p {
     margin: 0 auto;
 }
 
-header {
-    text-align: left;
-    background-color: #000;
-    color: #fff;
-    padding: 20px;
-    justify-content: center; /* Zentriere die Elemente horizontal */
+
+
+.profile {
+    display: flex; /* Ändere das Container-Display auf Flexbox */
     align-items: center; /* Zentriere die Elemente vertikal */
-    flex-direction: column; /* Staple die Elemente vertikal */
+    justify-content: space-between;
 }
 
 .profile img {
-    border-radius: 50%;
-    display: block;
-    height: 58px;
-    float: left;
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
 }
 
-.profile {
-    position: relative; /* Position des übergeordneten Elements festlegen */
+.profile h3 {
 }
-
-.profile img.bell-icon {
-    position: absolute; /* Position des Glocken-Symbols absolut setzen */
-    top: 50%; /* Obere Position auf 50% der Höhe des übergeordneten Elements setzen */
-    right: 0; /* Rechtsbündig ausrichten */
-    transform: translateY(-50%); /* Vertikal zentrieren */
+.profile .bell-icon {
+    width: 37px;
     height: 37px;
+    margin-right: 20px;
+}
+
+.welcome-search {
+    margin-left: 20px;
 }
  
 
@@ -47,7 +44,7 @@ header {
 }
 
 .welcome {
-    margin-top: 1000px; /* Ändere den oberen Seitenabstand nach Bedarf */
+    margin-top: 20px; /* Ändere den oberen Seitenabstand nach Bedarf */
 }
 
 .categories, .most-popular {
@@ -166,6 +163,8 @@ h1 {
     font-weight: 600;
     font-style: normal;
     font-size: 32px;
+    color: white;
+    
 }
 
 h2 {
