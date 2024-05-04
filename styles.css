@@ -155,19 +155,25 @@ nav a.active {
 }
 
 h1 {
-    font-family: 'Palanquin Dark SemiBold', sans-serif; /* Change the font family as desired */
+    font-family: "Palanquin Dark", sans-serif;
+    font-weight: 600;
+    font-style: normal;
     font-size: 32px;
 }
 
 h2 {
-    font-family: 'Palanquin Dark SemiBold', sans-serif; /* Change the font family as desired */
+    font-family: "Palanquin Dark", sans-serif;
+    font-weight: 600;
+    font-style: normal;
     font-size: 24px;
     margin-bottom: 15px;
     color: white;
 }
 
 h3 {
-    font-family: 'Palanquin Dark SemiBold', sans-serif; /* Change the font family as desired */
+    font-family: "Palanquin Dark", sans-serif;
+    font-weight: 600;
+    font-style: normal;
     font-size: 24px;
     margin-bottom: 15px;
     color: white;
@@ -178,6 +184,7 @@ p {
     font-family: 'Roboto SemiBold', sans-serif; /* Change the font family as desired */
     font-size: 14px;
     color: white;
+    text-align: left;
 }
 
 body {
