@@ -97,17 +97,6 @@ body, h1, h2, p {
     margin-top: 7px; /* Adjust spacing between the icon and text */
 }
 
-.item-name {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 20%;
-    background: rgba(217, 217, 217, 0.6); /* Adjust the background color with transparency */
-    font-family: 'Palanquin Dark SemiBold', sans-serif; /* Change the font family as desired */
-    font-size: 24px; /* Adjust font size as needed */
-    color:black; /* Adjust text color as needed */
-}
 
 .blog-title {
     margin-left: 20px;
@@ -118,7 +107,7 @@ body, h1, h2, p {
     margin-right: 20px;
     border: 2px solid #646464;
     height: 330px;
-    width: 373px;
+    width: 90%;
     border-radius: 22px;
     background-color: white;
     left: 20px;
@@ -165,7 +154,7 @@ body, h1, h2, p {
 
 
 .title {
-    font-family: 'Palanquin Dark';
+    font-family: 'Palanquin Dark', sans-serif;
     font-weight: 600;
     font-size: 16px;
     text-align: left;
