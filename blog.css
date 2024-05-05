@@ -121,12 +121,11 @@ body, h1, h2, p {
 }
 
 .dynamic-island img {
-    width: 331px;
-    height: 162px;
+    width: 310px;
+    height: 156px;
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 10px;
-
 }
 
 .profile img {
