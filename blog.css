@@ -96,7 +96,76 @@ body, h1, h2, p {
     color:black; /* Adjust text color as needed */
 }
 
+.dynamic-island {
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 2px solid #646464;
+    height: 330px;
+    width: 373px;
+    border-radius: 22px;
+    background-color: white;
+    left: 20px;
+    overflow: auto;
+}
 
+.profile {
+    display: flex; /* Ändere das Container-Display auf Flexbox */
+    align-items: center; /* Zentriere die Elemente vertikal */
+    justify-content: space-between;
+}
+
+.dynamic-island img {
+    width: 90%;
+    height: 168px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+.profile img {
+    width: 38px;
+    height: 36px;
+    border-radius: 100px;
+    margin-left: 20px; /* Add spacing between profile picture and text */
+}
+
+/* Name */
+.name {
+    font-family: 'Roboto SemiBold', sans-serif; /* Change the font family as desired */
+    font-size: 14px;
+    color: black;
+    text-align: left;
+}
+
+/* Date */
+.date {
+    font-family: 'Roboto SemiBold', sans-serif; /* Change the font family as desired */
+    font-size: 14px;
+    color: black;
+    margin-right: 20px
+}
+
+
+
+.title {
+    font-family: 'Palanquin Dark';
+    font-weight: 600;
+    font-size: 16px;
+    text-align: left;
+    margin-left: 20px;
+    color: black;
+}
+
+/* Description */
+.description {
+    font-family: 'Roboto SemiBold', sans-serif; /* Change the font family as desired */
+    font-size: 14px;
+    color: black;
+    text-align: left;
+    margin-right: 20px;
+    margin-left: 20px;
+    text-align: justify;
+}
 
 
 
