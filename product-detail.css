@@ -1,77 +1,132 @@
 /* product-detail.css */
-body, h1, p {
+body {
     margin: 0;
     padding: 0;
+    background-color: black;
 }
+
+
 
 .product-detail-container {
     font-family: Arial, sans-serif;
-    position: relative;
+    position: relative;  /* Keeps it relative for positioning internal elements absolutely */
     max-width: 768px;
     margin: 0 auto;
 }
 
 .product-navigation {
+    position: absolute;  /* Absolute positioning relative to the nearest positioned ancestor */
+    top: 20px;              /* Aligns the navigation bar at the top */
+    left: 0;             /* Aligns the navigation bar to the left */
+    right: 0;            /* Stretches the navigation bar to the right edge */
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Keeps items at both ends of the navigation bar */
     align-items: center;
-    padding: 20px;
+    z-index: 10;         /* Ensures the navigation bar is above other content */
+    padding: 0 20px;     /* Adds padding to the navigation bar */
+    margin: 0 20px;      /* Adds margin to the navigation bar */
 }
 
-.back-button {
-    font-size: 24px;
-    text-decoration: none;
-    color: #000;
-}
-
-.product-actions button {
-    background: none;
-    border: none;
-    font-size: 24px;
-    margin-left: 10px;
+.product-image {
+    margin: 0 auto;
+    position: relative;
+    width: 400px;
+    height: 400px;  /* Fixed height for the image container */
+    overflow: hidden;
+    margin-top: 50px;  /* Adjust or remove margin as needed */
 }
 
 .product-image img {
-    width: 100%;
-    display: block;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(2.5);  /* Adjust scale for desired zoom level */
+    width: 80%;
+    height: auto;
 }
 
-.product-buy-button button {
-    position: absolute;
-    bottom: 100px; /* Adjust as needed */
-    left: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
-    background: #000;
-    color: #fff;
-    border: none;
-    border-radius: 20px;
+.lower-group {
+    margin-top: -40px;
+    padding: 0 20px;
+
 }
 
-.ar-button {
-    background: green;
-    color: #fff;
-    padding: 10px;
-    border-radius: 20px;
+.icon-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;  /* Fixed size for the button */
+    height: 75px; /* Fixed size for the button */
     border: none;
-    position: absolute;
-    right: 20px;
-    bottom: 100px; /* Adjust as needed */
+    background: none; /* Remove any background */
+    padding: 0; /* Remove padding to avoid misalignments */
+    cursor: pointer;
+}
+
+.icon-button img {
+    width: 100%; /* Full width of the button */
+    height: 100%; /* Full height of the button */
+    object-fit: cover; /* This will cover the button area, adjust if needed */
+}
+
+.icon-group {
+    display: flex; /* Enables flexbox layout within the group */
+    align-items: center; /* Aligns the icons vertically */
+}
+
+
+.icon-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px; /* Adjusts horizontal margin */
+    padding: 0 20px; /* Adjusts padding inside the icon-row */
+    z-index: 2; /* Ensures it is above product-info if necessary */
+    position: relative; /* Ensures z-index is respected */
+}
+
+.icon img {
+    display: block; /* Removes bottom space/margin under the image */
+    width: auto;  /* Maintains the image's intrinsic width */
+    height: 75px; /* Set a fixed height, adjust as needed */
+    object-fit: contain; /* Ensures the image's aspect ratio is preserved */
 }
 
 .product-info {
+    max-width: 768px;
+    margin-top: -40px; /* Pulls product-info upwards, overlapping icon-row */
+    margin-bottom: 20px; /* Keeps bottom margin */
     padding: 20px;
+    overflow-y: auto; /* Allows scrolling */
+    border: gray 1px solid;
+    border-radius: 12%;
     background-color: #fff;
+    position: relative; /* Ensures z-index can be applied */
+    z-index: 1; /* Lower than icon-row to allow overlap */
 }
 
-.product-info h1 {
-    margin-bottom: 10px;
+.product-info .centered-content, .block-content {
+    padding: 0 10px; /* Adjust padding inside these contents */
 }
 
-.product-info p {
-    line-height: 1.6;
+.centered-content {
+    margin-bottom: 25px;
 }
 
-.product-description {
-    margin-top: 10px;
+.centered-content h1,
+.centered-content p {
+    text-align: center; /* Centers the text horizontally */
+    font-weight: bolder;
+}
+
+.custom-color {
+    color: #BF986D; /* This hex color is a warm, muted gold shade */
+}
+
+
+.block-content p {
+    text-align: justify; /* Justifies the text for cleaner presentation */
+    margin: 10px 0; /* Space between paragraphs */
+    width: 100%; /* Ensures it takes full width of the container */
+    font-weight: 550;
 }
