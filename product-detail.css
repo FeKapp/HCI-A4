@@ -55,8 +55,8 @@ body {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 75px;  /* Fixed size for the button */
-    height: 75px; /* Fixed size for the button */
+    width: 50px;  /* Fixed size for the button */
+    height: 50px; /* Fixed size for the button */
     border: none;
     background: none; /* Remove any background */
     padding: 0; /* Remove padding to avoid misalignments */
@@ -88,7 +88,7 @@ body {
 .icon img {
     display: block; /* Removes bottom space/margin under the image */
     width: auto;  /* Maintains the image's intrinsic width */
-    height: 75px; /* Set a fixed height, adjust as needed */
+    height: 50px; /* Set a fixed height, adjust as needed */
     object-fit: contain; /* Ensures the image's aspect ratio is preserved */
 }
 
